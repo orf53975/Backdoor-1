@@ -1,0 +1,21 @@
+﻿<Window x:Class="Backdoor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Backdoor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="공격 대상 목록" VerticalAlignment="Top"/>
+        <TextBox x:Name="AddrBox"  HorizontalAlignment="Left" Height="23" Margin="350,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" ToolTip="IP 주소"/>
+        <TextBox x:Name="PortBox" HorizontalAlignment="Left" Height="23" Margin="620,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" ToolTip="포트 번호"/>
+        <Button x:Name="TryConnect_Btn" Content="연결 시도" HorizontalAlignment="Left" Margin="707,32,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="TryConnect_Btn_Click"/>
+        <ListBox x:Name="TargetListBox" HorizontalAlignment="Left" Height="378" Margin="10,31,0,0" VerticalAlignment="Top" Width="335"/>
+        <Button x:Name="Execute_Btn" Content="시작" HorizontalAlignment="Left" Margin="270,11,0,0" VerticalAlignment="Top" Width="75" Click="Execute_Btn_Click"/>
+        <TextBox x:Name="PayloadPathBox" HorizontalAlignment="Left" Height="23" Margin="350,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352" AutomationProperties.HelpText="PayloadPath"/>
+        <TextBox x:Name="LogBox" HorizontalAlignment="Left" Height="299" Margin="350,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432"/>
+        <TextBlock HorizontalAlignment="Left" Margin="350,89,0,0" TextWrapping="Wrap" Text="로그" VerticalAlignment="Top"/>
+        <Button x:Name="PageTest_Btn" Content="Button" HorizontalAlignment="Left" Margin="707,62,0,0" VerticalAlignment="Top" Width="75" Click="PageTest_Btn_Click"/>
+    </Grid>
+</Window>
